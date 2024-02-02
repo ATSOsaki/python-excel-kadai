@@ -2,9 +2,9 @@ import pandas as pd
 from openpyxl import load_workbook
 from openpyxl.styles import PatternFill
 
-input_file_2022 = ('2022_年間売上表.xlsx', 'Sheet1')
-input_file_2023 = ('2023_年間売上表.xlsx', 'Sheet1')
-output_file = '売上集計表.xlsx'
+input_file_2022 = ('kadai_003\\2022_年間売上表.xlsx', 'Sheet1')
+input_file_2023 = ('kadai_003\\2023_年間売上表.xlsx', 'Sheet1')
+output_file = 'kadai_003\\売上集計表.xlsx'
 
 # ①データの連結
 df_2022 = pd.read_excel(input_file_2022[0], sheet_name=input_file_2022[1])
